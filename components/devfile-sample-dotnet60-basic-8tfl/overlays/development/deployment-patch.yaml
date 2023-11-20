@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-8tfl
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rs-demos-bhds-tenant/image-repository-cr-dotnet-component/devfile-sample-dotnet60-basic-8tfl@sha256:de10673c80d6730b971b5fb351251416bf86882b3344709d7068efc447229f1c
+        name: main
+        resources: {}
+status: {}
